@@ -1,0 +1,6 @@
+MAIL FROM: test.sender@example.com
+MAIL TO: test.receiver@example.com
+SUBJECT:Test Subject
+Hello, this is a test email.
+This is the second line.
+BYE
