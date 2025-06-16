@@ -22,7 +22,15 @@ public class CovidWorker extends Thread {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            File file = new File(fileOutput);
+            boolean fileExists = file.exists();
+
             FileWriter fw = new FileWriter(fileOutput, true);
+
+            if (!fileExists) {
+                fw.append("date, No. new covid cases, No. hospitalized patients, No. recovered patients\n");
+                fw.flush();
+            }
 
             writer.write("HELLO " + socket.getInetAddress().getHostAddress() + "\n");
             writer.flush();

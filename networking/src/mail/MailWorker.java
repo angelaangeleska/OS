@@ -74,7 +74,8 @@ public class MailWorker extends Thread {
                 fw.flush();
                 line = reader.readLine();
             }
-
+            fw.append(line).append("\n");
+            fw.flush();
 
             String data = str.toString();
             byte[] bytes = data.getBytes();
