@@ -13,8 +13,7 @@ OUTFILE="result.txt"
 
 for file in "$@"; 
 do
-	CHARS=$(awk -v n="$N" '{print substr($0, 1, n)}' "$file") >> "$OUTFILE"
-	echo "${CHARS}"
-	echo "EXTRACTED FROM FILE: ${file}"
+	awk -v n="$N" '{print substr($0, 1, n)}' "$file" >> "$OUTFILE" 
+	echo "EXTRACTED FROM FILE: ${file}" >> "$OUTFILE"
 done
 

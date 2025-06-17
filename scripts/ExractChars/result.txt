@@ -1,0 +1,8 @@
+Hell
+I'm 
+EXTRACTED FROM FILE: test1.txt
+2210
+2220
+OS
+OPER
+EXTRACTED FROM FILE: test2.txt
