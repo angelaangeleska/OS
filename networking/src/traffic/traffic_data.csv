@@ -1,0 +1,5 @@
+date, location, vehicle count, average speed (km/h), congestion level (LOW/MEDIUM/HIGH)
+2025-06-18, SKOPJE, 124, 4, HIGH
+2025-06-18, PRILEP, 111, 2, LOW
+2025-06-18, BITOLA, 300, 7, MEDIUM
+2025-06-18, STRUGA, 145, 3, MEDIUM
