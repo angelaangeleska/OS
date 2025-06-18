@@ -1,0 +1,3 @@
+docker build -t example3 .
+docker run -p 8080:80 example3  # -p 8080:80 = го поврзува (map) портот 80 од контејнерот со
+                                        порт 8080 на локалната машина (localhost:8080)

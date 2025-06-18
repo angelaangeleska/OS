@@ -1,0 +1,4 @@
+docker build -t example2 .
+docker run -it example2  # -it = interactive + terminal: дозволува внес преку тастатура (за Scanner), симулира терминал
+                         # -i (interactive) го држи стандардниот влез отворен, -t (tty) создава терминал;
+                           потребно за Scanner да работи
